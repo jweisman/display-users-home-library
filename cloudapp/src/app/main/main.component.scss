@@ -1,0 +1,67 @@
+section>h1 {
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+textarea {
+  padding: 2px;
+  border-width: 1px;
+  $width: calc(100% - 6px);
+  width: $width;
+  max-width: $width;
+  height: 150px;
+  font-family: monospace;
+  display: block;
+}
+
+textarea,
+section {
+  margin-bottom: 10px;
+}
+
+pre {
+  overflow: auto;
+  max-height: 200px;
+}
+
+pre,
+textarea {
+  font-size: 0.9em;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+  .name {
+    text-align: right;
+  }
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+th {
+  background: #0e7bba;
+  color: #fff;
+}
+
+th, td {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#nothing-to-show {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .example {
+    font-size: 10px;
+  }
+}

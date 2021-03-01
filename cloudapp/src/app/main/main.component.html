@@ -1,0 +1,32 @@
+<div *ngIf="displayTable && pageEntities.length > 0; else emptyPageEntities">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First name</th>
+        <th scope="col">Last name</th>
+        <th scope="col">Home Library</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entity of pageEntities; let i = index">
+        <td *ngIf="entity.myObj">{{ i + 1 }}</td>
+        <td *ngIf="entity.myObj" class="name">{{ entity.myObj.first_name }}</td>
+        <td *ngIf="entity.myObj" class="name" >{{ entity.myObj.last_name }}</td>
+        <td *ngIf="entity.myObj">{{ entity.myObj.home_library }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #emptyPageEntities>
+  <div id="nothing-to-show">
+    <p>There is nothing to show in this screen.</p>
+    <span class="example">For example go to one of the following screens to see any results:</span>
+    <ul class="example">
+      <li>Borrowing Requests</li>
+      <li>Find and Manage Users</li>
+    </ul>
+
+  </div>
+</ng-template>

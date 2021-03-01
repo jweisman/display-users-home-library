@@ -1,0 +1,17 @@
+{
+   "id": "display-users-home-library",
+   "title": "Display users home library",
+   "description": "Application that come to display the users home library",
+   "author": "Technion Library IS Team",
+   "icon": {
+      "type": "font",
+      "value": "fa fa-users"
+   },
+   "fullscreen": {
+      "allow": false,
+      "open": false
+   },
+   "entities": [
+      "USER"
+   ]
+}
