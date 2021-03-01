@@ -20,7 +20,7 @@ export class MainComponent implements OnInit, OnDestroy {
   hasApiResult: boolean = false;
   loading = false;
 
-  private displayTable: boolean = false;
+  public displayTable: boolean = false;
 
   constructor(private restService: CloudAppRestService,
     private eventsService: CloudAppEventsService,
@@ -49,7 +49,6 @@ export class MainComponent implements OnInit, OnDestroy {
     if ((this.pageEntities).length > 0) {
 
       for (let i = 0; i < this.pageEntities.length; i++) {
-        console.log("This link >>> " + this.pageEntities[i].link);
         let linkSplitted = (this.pageEntities[i].link).split('/');
         let linkToCall = linkSplitted[0] + '/' + linkSplitted[1] + '/' + linkSplitted[2];
 

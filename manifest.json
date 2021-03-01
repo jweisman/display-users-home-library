@@ -1,17 +1,21 @@
 {
    "id": "display-users-home-library",
    "title": "Display users home library",
-   "description": "Application that come to display the users home library",
+   "description": "Displaying the users home library",
    "author": "Technion Library IS Team",
+   "pages": {
+      "help": "https://github.com/Technion-Central-Library-IS-Team/display-users-home-library"
+   },
    "icon": {
       "type": "font",
       "value": "fa fa-users"
    },
    "fullscreen": {
-      "allow": false,
       "open": false
    },
    "entities": [
-      "USER"
-   ]
+      "USER",
+      "BORROWING_REQUEST"
+   ],
+   "license": "https://github.com/Technion-Central-Library-IS-Team/display-users-home-library/LICENSE"
 }
