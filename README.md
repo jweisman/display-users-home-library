@@ -16,7 +16,10 @@ Displaying "Home Library" field in screens that call **users** API, for example:
 ![Find and Manage Users Screen](./cloudapp/src/assets/find_and_manage_users_screen.png)
 
 # Issues and defects
-Please use the GitHub “Issues” to report defects
+Please use the GitHub “Issues” to report defects.
+
+# Ideas for expansion
+Feel free to [suggest](mailto:yakirs@technion.ac.il?subject=[GitHub]%20Display%20users%20home%20library%20Alma%20cloud%20app) new ideas and field requirements (from the **user** API).
 
 # License
 [BSD 3-Clause License](./LICENSE)
