@@ -5,15 +5,17 @@
         <th scope="col">#</th>
         <th scope="col">First name</th>
         <th scope="col">Last name</th>
-        <th scope="col">Home Library</th>
+        <th scope="col" *ngFor="let category of settings.categories">{{category.description}}</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let entity of pageEntities; let i = index">
-        <td *ngIf="entity.myObj">{{ i + 1 }}</td>
-        <td *ngIf="entity.myObj" class="name">{{ entity.myObj.first_name }}</td>
-        <td *ngIf="entity.myObj" class="name" >{{ entity.myObj.last_name }}</td>
-        <td *ngIf="entity.myObj">{{ entity.myObj.home_library }}</td>
+        <ng-container *ngIf="entity.myObj">
+          <td>{{ i + 1 }}</td>
+          <td class="name">{{ entity.myObj.first_name }}</td>
+          <td class="name" >{{ entity.myObj.last_name }}</td>
+          <td *ngFor="let category of settings.categories">{{ entity.myObj.categories[category.code] }}</td>
+        </ng-container> 
       </tr>
     </tbody>
   </table>

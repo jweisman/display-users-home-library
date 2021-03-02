@@ -1,0 +1,19 @@
+<div class="cloudapp-actions">
+  <button mat-flat-button color="secondary" [routerLink]="['/']">
+    <mat-icon>arrow_back_ios</mat-icon> Back
+  </button>
+  <button mat-flat-button type="button" color="primary" (click)="save()">Save</button>
+</div>
+<div class="loading-shade" *ngIf="loading">
+  <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+</div>
+<h1>Settings</h1>
+<form *ngIf="form" [formGroup]="form">
+  <h2>Statistical Category Types</h2>
+  <p>Select the category types to display:</p>
+  <mat-list>
+    <mat-list-item *ngFor="let category of categoryOptions">
+      <mat-checkbox labelPosition="after" [checked]="checked(category)" (change)="categoryChanged($event)" [value]="category">{{ category.description }}</mat-checkbox>
+    </mat-list-item>
+  </mat-list>
+</form>
