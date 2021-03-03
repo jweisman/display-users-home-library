@@ -56,7 +56,7 @@ export class SettingsComponent implements OnInit {
       this.categories.push(new FormControl(value))
     } else {
       const i = this.categories.value.findIndex(v=>v.code === value.code)
-      if (i) this.categories.removeAt(i);
+      if (~i) this.categories.removeAt(i);
     }
   }
 
