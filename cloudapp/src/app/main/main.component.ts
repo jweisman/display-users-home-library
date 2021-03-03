@@ -82,7 +82,7 @@ export class MainComponent implements OnInit, OnDestroy {
             let myObj = {
               first_name: 'ERROR',
               last_name: 'ERROR',
-              home_library: 'ERROR'
+              categories: {}
             };
             this.pageEntities[i]['myObj'] = myObj;
           }
