@@ -1,9 +1,9 @@
 {
    "id": "display-users-home-library",
    "title": "Display users home library",
+   "description": "Displaying the users home library",
    "subtitle": "default",
    "author": "Technion Library IS Team",
-   "description": "Displaying the users home library",
    "pages": {
       "help": "https://github.com/Technion-Central-Library-IS-Team/display-users-home-library",
       "settings": "/#/settings"
